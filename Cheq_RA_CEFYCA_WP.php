@@ -60,7 +60,7 @@ add_action( 'wp_enqueue_scripts', 'cefy_chequeo_RA_LOMLOE_LFP_enqueue_scripts');
 //ejemplo: [cefy_grafico idgrafico="343"]Texto interior[/cefy_grafico]
 function cefy_chequeo_RA_LOMLOE_LFP_shortcode($atts = '', $content='') {
 
-    $version = '5.98';
+    $version = '6.07';
     
     $atributos = shortcode_atts([ 'curso' => '0'], $atts);
     $curso = $atributos['curso'];
