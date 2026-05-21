@@ -1,0 +1,132 @@
+div#contenedor_cefy_chequeo_RA h3{
+    text-align: center;
+    margin: 0 ;
+    padding: 0.5em ;
+    color: black;
+}
+a.enlace_error{
+    color: darkblue;
+    border: 1px solid darkblue;
+    display: inline-block;
+    padding: 0 4px;
+}
+div#informeFallos pre{
+    margin: 1em 0 0 0;
+    padding: 0 5px;
+}
+.cefy_linea_valida{
+    color: green;
+    padding: 0 1rem;
+}
+.cefy_linea_invalida{
+    font-weight: bold;   
+    color: red;
+}
+span.texto_resaltado{
+    font-weight: bold;  
+    color: red;
+}
+span.texto_matricula{
+    font-weight: bold;  
+}
+
+div.marcoInforme{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+}
+div.interiorInforme{
+    background-color: white;
+    padding: 0.5rem;
+    margin: 1em;
+    color: black;
+}
+div#informeEstructura{
+    background-color: white;
+    
+}
+div#informeEstructura a{
+    
+    padding: 0 1.5rem;
+}
+div#informeFallos{
+    background-color: #fbfbfb;
+    padding: 0 1rem 0.5rem;
+    color: black;
+    border: 1px solid darkblue;
+}
+div#informeCongruencia{
+    background-color: white;
+    
+}
+div#informeExpErroresFlot{
+    background-color: #fafafa;
+    border: 2px darkblue solid;
+    padding: 0.5em;
+    position: fixed;
+    left: 50%;
+    top: 175px;
+    width: 48%;
+    max-height: 80%;
+    overflow-y: scroll;
+    transition: top 1s, opacity 1s, height 1s;
+}
+div#informeResumen{    
+    background-color: rgb(252, 234, 200);
+}
+div.divExpError{
+    margin: 1em 0.5em;
+    padding: 0.25em;
+    background-color: white;
+    border: 1px solid black;
+}
+div.divExpError ul{
+    margin: 0;
+}
+span.textoResaltado{
+    color: darkblue;
+    font-weight: bold;
+}
+span.tituloEnsenanza{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+span.listaEnsenanzas{
+    text-indent: 2em;
+}
+.cefy_minimizar_resultados{
+    max-height: 100px;
+    overflow: hidden;
+    opacity: 0.35;   
+}
+.cefy_ocultar_resultados{
+    overflow: hidden;
+    opacity: 0;
+    visibility: 0;
+    height: 2%;
+    top: -20px !important;
+    height: 10px;
+    background-color: blue;
+}
+p.TituloInformeEstructura{
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: auto;
+}
+span.warning_suspensos{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+span.warning_suspensos_extraordinaria{
+    color: rgb(227, 0, 235);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+span.warningCursosAvisos{
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
