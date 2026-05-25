@@ -3,7 +3,7 @@
 Plugin Name: Cheq_RA_CEFYCA_WP_LOMLOE_LFP
 Plugin URI: https://cefyca.es
 Description: Plugin para CHEQUEAR ficheros de la enseñanza concertada a partir del curso 2022-23
-Version: 6.79
+Version: 6.88
 Author: Javier Soriano
 Author URI: https://cefyca.es
 License: GPL2
@@ -60,7 +60,7 @@ add_action( 'wp_enqueue_scripts', 'cefy_chequeo_RA_LOMLOE_LFP_enqueue_scripts');
 //ejemplo: [cefy_grafico idgrafico="343"]Texto interior[/cefy_grafico]
 function cefy_chequeo_RA_LOMLOE_LFP_shortcode($atts = '', $content='') {
 
-    $version = '6.79';
+    $version = '6.88';
     
     $atributos = shortcode_atts([ 'curso' => '0'], $atts);
     $curso = $atributos['curso'];
