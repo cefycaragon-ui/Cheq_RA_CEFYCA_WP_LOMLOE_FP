@@ -375,7 +375,7 @@ const cruces = function(r){
         let new_dato = dato.slice(1)
         dato = new_dato
     } */
-    console.log('Marcador 1')
+    console.log('Marcador 2')
     console.log(datos)
     if(!datos || dato != datos[key]){
        //console.log({dato})
