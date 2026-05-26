@@ -11,7 +11,7 @@ var CHARAHelp_ruta_parametros ='../../wp-content/plugins/Cheq_RA_CEFYCA_WP_LOMLO
 //En la v8.05 metemos todo en LOMLOE.
 //En la v9.041 metemos la LFP
 
-const v_js = "10.66"
+const v_js = "11.02"
 const txtLimiteCongErrores = 300
 const txtLimiteExpErrores = 300
 var limiteCongErrores = txtLimiteCongErrores
@@ -121,15 +121,15 @@ const cruces = function(r){
         let valor = datos_temporales_linea['subcadena'].trim()
         numero_GIR_temporal = valor
         let patron_num = new RegExp('^[0-9]{14}$','gi')
-        console.log('En el cruce del 20')
-        console.log({valor})
+        //console.log('En el cruce del 20')
+        //console.log({valor})
         if (patron_num.test(valor))return 0  //Se han recibido 14 digitos.
         if (validateDNI(valor.trim()))return 0  //Se ha recibido un DNI/NIE rodeado de caracteres en blanco.
 
         //Si el formato es DNI ó NIE con caracteres '0' de relleno, solo se permiten al principio.
         let ultimos_car = valor.substring(5,14)
         let primeros_car = valor.substr(0,5)
-        if ( ! validateDNI(ultimos_car) ) console.log('Formato de DNI/NIE inválido.')
+        if ( ! validateDNI(ultimos_car) ) //console.log('Formato de DNI/NIE inválido.')
         if ( ! validateDNI(ultimos_car) )return 'Formato de DNI/NIE inválido.'
         if ( ! ( primeros_car == '00000' ) ) return 'Formato de caracteres anteriores a DNI/NIE inválido'
         
@@ -375,8 +375,8 @@ const cruces = function(r){
         let new_dato = dato.slice(1)
         dato = new_dato
     } */
-    console.log('Marcador 2')
-    console.log(datos)
+    //console.log('Marcador 2')
+    //console.log(datos)
     if(!datos || dato != datos[key]){
        //console.log({dato})
        //console.log(key)  //la key va con un 0 delante a veces.
@@ -786,6 +786,7 @@ const evaluarAlumnoMateria = function(linea_alumno, dato_alumno, dato_materias, 
     //console.log(dato_materias_matricula)
     //console.log((linea_alumno, dato_alumno, dato_materias, numero_materias, dato_materias_matricula))
     //Vamos a usar una función auxiliar para almacenar los datos de cada linea.
+    //console.log(dato_competencias)
     //try{
         //El numero_materias, refleja el numero de materias con tipomatriculamateria distinto de 4.
         let cadena = ""
@@ -889,6 +890,8 @@ const evaluarAlumnoMateria = function(linea_alumno, dato_alumno, dato_materias, 
         //Buscamos competencias repetidas
         let parametros_competencias = parametros["ensenanzas_relacion_competencias"]
         let dato_competencias_unico = [...new Set(dato_competencias)]
+        //console.log(dato_competencias_unico)
+        //console.log(dato_competencias_unico.length)
         if(parametros_competencias[tipoEnsenanzaActiva] && parametros_competencias[tipoEnsenanzaActiva][ensenanzaActiva]){
             //Hay parametros para el tipo de enseñanza y el curso. Por tanto evaluamos.
             let C = parametros_competencias[tipoEnsenanzaActiva][ensenanzaActiva]
@@ -902,7 +905,8 @@ const evaluarAlumnoMateria = function(linea_alumno, dato_alumno, dato_materias, 
                 return cadena
             }
         }
-        
+        //console.log('Marcador 3')
+        //console.log(parametros['ensenanzas_limites'])
         if(parametros['ensenanzas_limites'][tipoEnsenanzaActiva]){
             let rango_materias = parametros['ensenanzas_limites'][tipoEnsenanzaActiva][cursoEnsenanzaActiva]
             if (!cursoEnsenanzaActiva || !rango_materias){
