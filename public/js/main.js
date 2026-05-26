@@ -375,7 +375,8 @@ const cruces = function(r){
         let new_dato = dato.slice(1)
         dato = new_dato
     } */
-    
+    console.log('Marcador 1')
+    console.log(datos)
     if(dato != datos[key]){
        //console.log({dato})
        //console.log(key)  //la key va con un 0 delante a veces.
