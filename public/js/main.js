@@ -11,7 +11,7 @@ var CHARAHelp_ruta_parametros ='../../wp-content/plugins/Cheq_RA_CEFYCA_WP_LOMLO
 //En la v8.05 metemos todo en LOMLOE.
 //En la v9.041 metemos la LFP
 
-const v_js = "11.02"
+const v_js = "11.11"
 const txtLimiteCongErrores = 300
 const txtLimiteExpErrores = 300
 var limiteCongErrores = txtLimiteCongErrores
@@ -158,6 +158,7 @@ const cruces = function(r){
         ense = limpiarCodigos(ense)
         tipo_ens_linea2 = limpiarCodigos(tipo_ens_linea2)
         ense_linea2 = limpiarCodigos(ense_linea2)
+        
         //console.log(parametros["ensenanzas_asignaturas"][tipo_ens][ense])
         let materias = parametros["ensenanzas_asignaturas"][tipo_ens][ense] ? parametros["ensenanzas_asignaturas"][tipo_ens][ense][curs] : undefined
         let valor = datos_temporales_linea['subcadena'].trim()
