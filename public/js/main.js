@@ -11,7 +11,7 @@ var CHARAHelp_ruta_parametros ='../../wp-content/plugins/Cheq_RA_CEFYCA_WP_LOMLO
 //En la v8.05 metemos todo en LOMLOE.
 //En la v9.041 metemos la LFP
 
-const v_js = "10.57"
+const v_js = "10.66"
 const txtLimiteCongErrores = 300
 const txtLimiteExpErrores = 300
 var limiteCongErrores = txtLimiteCongErrores
@@ -377,7 +377,7 @@ const cruces = function(r){
     } */
     console.log('Marcador 1')
     console.log(datos)
-    if(dato != datos[key]){
+    if(!datos || dato != datos[key]){
        //console.log({dato})
        //console.log(key)  //la key va con un 0 delante a veces.
        //console.log(datos[key])
