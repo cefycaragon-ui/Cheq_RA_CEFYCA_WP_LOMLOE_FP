@@ -1,7 +1,7 @@
 {
     "p" : 
     {
-        "version": "1.300",
+        "version": "1.390",
         "ensenanzas_titulan":{
             "24"    : ["2"],
             "25"    : ["2"],
@@ -11282,6 +11282,8 @@
             "1033": "Automoción",
             "1034": "Mantenimiento Aeromecánico de Aviones con Motor de Turbina",
             "1035": "Seguridad",
+            "1036": "Panadería y Bollería Artesanales",
+            "1037": "Mantenimiento de vehículos híbridos y eléctricos",
             "1038": "Auditoría energética",
             "1040": "Ciberseguridad en Entornos de las Tecnologías de la Información",
             "1041": "Inteligencia Artificial y Big Data",
